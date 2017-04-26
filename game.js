@@ -19,14 +19,14 @@ Aquaplane.Preloader.prototype = {
         this.load.bitmapFont('fat-and-tiny');
         this.load.bitmapFont('interfont');
 
-        this.load.images([ 'logo', 'boat', 'skier', 'pole', 'rock', 'shark', 'sea' ]);
+        this.load.images([ 'logo', 'skier', 'rocektship', 'rock', 'star', 'sky' ]);
         this.load.spritesheet('waves', 'waves.png', 16, 6);
 
     },
 
     create: function () {
 
-        this.state.start('Aquaplane.MainMenu');
+        this.state.start('Best Rocketship.MainMenu');
 
     }
 
