@@ -19,7 +19,7 @@ Aquaplane.Preloader.prototype = {
         this.load.bitmapFont('fat-and-tiny');
         this.load.bitmapFont('interfont');
 
-        this.load.images([ 'logo', 'skier', 'rocektship', 'rain', 'star', 'sky' ]);
+        this.load.images([ 'logo', 'skier', 'rocektship', 'space', 'star', 'sky' ]);
         this.load.spritesheet('waves', 'waves.png', 16, 6);
 
     },
@@ -73,7 +73,7 @@ Aquaplane.Game = function (game) {
     this.ready = false;
 
     this.layer = null;
-    this.itemDist = ['sky', 'Rocketship', 'rain', 'star', 'star', 'star', 'cloud'];
+    this.itemDist = ['logo', 'Rocketship', 'rain', 'star', 'star', 'star', 'cloud'];
 
     this.boat = null;
     this.skier = null;
