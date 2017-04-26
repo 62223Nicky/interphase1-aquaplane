@@ -19,7 +19,7 @@ Aquaplane.Preloader.prototype = {
         this.load.bitmapFont('fat-and-tiny');
         this.load.bitmapFont('interfont');
 
-        this.load.images([ 'logo', 'skier', 'rocektship', 'space', 'star', 'sky' ]);
+        this.load.images([ 'logo', 'skier', 'sailboat', 'shark', 'grabage', 'sea' ]);
         this.load.spritesheet('waves', 'waves.png', 16, 6);
 
     },
@@ -73,7 +73,7 @@ Aquaplane.Game = function (game) {
     this.ready = false;
 
     this.layer = null;
-    this.itemDist = ['logo', 'Rocketship', 'rain', 'star', 'star', 'star', 'cloud'];
+    this.itemDist = ['shark', 'shark', 'shark', 'grabage',' rock'];
 
     this.boat = null;
     this.skier = null;
@@ -93,7 +93,7 @@ Aquaplane.Game.prototype = {
     init: function () {
 
         this.score = 0;
-        this.lives = 3;
+        this.lives = 4;
         this.speed = 420;
 
         this.ready = false;
@@ -183,7 +183,7 @@ Aquaplane.Game.prototype = {
             area.y += 65;
         }
 
-        this.line = new Phaser.Line(this.boat.x - 28, this.boat.y, this.skier.x + 6, this.skier.y - 1);
+        this.line = new Phaser.Line(this.boat.x - 28, this.sailboat.y, this.skier.x + 6, this.skier.y - 1);
 
         //  The rope that attaches the water skier to the boat
         this.rope = this.add.graphics(0, 0);
